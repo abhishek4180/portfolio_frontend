@@ -33,7 +33,10 @@ function App() {
   return (
     <Router>
     {/* className={`App h-full ${dark ? "bg-[#2C2F31] text-[#fff] " : "bg-[#d9dcdf]"}`} */}
-    <div className={`App h-full ${dark ? "bg-[#2C2F31] text-[#fff] " : "bac_pat_light"}`}>
+    <div className={`App h-full${dark 
+                    ? 'bg-gradient-to-b from-gray-800 to-gray-900 bac_pat_dark text-white' 
+                    : 'bg-gradient-to-b from-gray-200 to-gray-300 bac_pat_light'
+                  }`}>
 
 
         
