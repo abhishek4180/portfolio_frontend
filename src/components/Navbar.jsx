@@ -38,10 +38,10 @@ export default function Navbar() {
 
     return (
         <div className='flex justify-center items-center w-[100%]' >
-            <div className='nav shadow-xl shadow-slate-500 fixed z-40 group bottom-1 md:bottom-2 bg-transparent backdrop-blur-3xl px-10 p-3 rounded-full flex gap-2 w-[100%] md:w-[30%] justify-between items-center' >
+            <div className='nav shadow-xl shadow-slate-500 fixed z-40 group bottom-1 md:bottom-2 bg-transparent backdrop-blur-3xl px-10 p-3 rounded-full flex gap-2 w-[90%] md:w-[30%] justify-between items-center' >
                 <a className={` text-[13px] flex justify-center items-center flex-col w-[50px] h-[50px] hover:bg-slate-400 hover:text-white rounded-full  ${active === '#home' && "activeclass"}`} href='#home' > <FaHome style={{ width: "20px", height: "20px" }} /> Home </a>
                 <a className={` text-[13px] flex justify-center items-center flex-col w-[50px] h-[50px] hover:bg-slate-400 hover:text-white rounded-full ${active === '#about' && "activeclass"}`} href='#about' > <FaRegUser style={{ width: "20px", height: "20px" }} /> About </a>
-                <a className={` text-[13px] flex justify-center items-center flex-col w-[50px] h-[50px] hover:bg-slate-400 hover:text-white rounded-full ${active === '#coding' && "activeclass"}`} href='#coding' > <FaCode style={{ width: "20px", height: "20px" }} /> Coding </a>
+                {/* <a className={` text-[13px] flex justify-center items-center flex-col w-[50px] h-[50px] hover:bg-slate-400 hover:text-white rounded-full ${active === '#coding' && "activeclass"}`} href='#coding' > <FaCode style={{ width: "20px", height: "20px" }} /> Coding </a> */}
                 <a className={` text-[13px] flex justify-center items-center flex-col w-[50px] h-[50px] hover:bg-slate-400 hover:text-white rounded-full ${active === '#projects' && "activeclass"}`} href='#projects' > <GoProject style={{ width: "20px", height: "20px" }} /> Projects </a>
                 <a className={` text-[13px] flex justify-center items-center flex-col w-[50px] h-[50px] hover:bg-slate-400 hover:text-white rounded-full ${active === '#contact' && "activeclass"}`} href='#contact' > <MdContactPhone style={{ width: "20px", height: "20px" }} /> Contact </a>
             </div>

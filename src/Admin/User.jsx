@@ -21,10 +21,10 @@ export default function User() {
   
     fetchData();
   }, []);
-    const [profileImage, setProfileImage] = useState(data.profileImage || '' );
-    const [aboutImage, setAboutImage] = useState(data.aboutImage || '' );
-    const [about, setAbout] = useState(data.about || '' );
-    const [resume, setResume] = useState(data.resume || '' );
+    const [profileImage, setProfileImage] = useState(data?.profileImage || '' );
+    const [aboutImage, setAboutImage] = useState(data?.aboutImage || '' );
+    const [about, setAbout] = useState(data?.about || '' );
+    const [resume, setResume] = useState(data?.resume || '' );
 
      const [add, setAdd] = useState(false);
     const handleSubmit = async (e) => {

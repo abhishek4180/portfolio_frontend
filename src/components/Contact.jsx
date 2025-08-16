@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaLinkedin, FaTwitter, FaGithub, FaWhatsapp } from "react-icons/fa";
 import ContactForm from './ContactForm';
+import { socialMedia } from '../data/projects';
 
 export default function Contact({dark}) {
     
@@ -20,8 +21,8 @@ export default function Contact({dark}) {
                     <p>Write me on social media</p>
                     </div>
                     <div className=' flex flex-row  justify-center items-center gap-4 '>
-                           <a className=' hover:bg-blue-300 '  href='https://www.linkedin.com/in/rkvrahul/' > <FaLinkedin style={{width:"30px", height:"30px"}} /></a>
-                           <a className=' hover:bg-blue-300 '  href='https://twitter.com/devrahuljourney' > <FaTwitter style={{width:"30px", height:"30px"}} /></a>
+                           <a className=' hover:bg-blue-300 '  href={socialMedia.linkedIn} > <FaLinkedin style={{width:"30px", height:"30px"}} /></a>
+                           <a className=' hover:bg-blue-300 '  href={socialMedia.github} > <FaTwitter style={{width:"30px", height:"30px"}} /></a>
                     </div>
                 </div>
             </div>

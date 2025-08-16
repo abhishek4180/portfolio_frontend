@@ -35,13 +35,13 @@ export default function Project() {
 
     const deleteProject = async (id) => {
         try {
-            del(true);
+            setLoading(true);
             const response = await axiosInstance.delete(` ${BASE_URL}/admin/delete/${id}`);
             if (response.data.success) {
                 toast.success("Deleted Successfully");
                 fetchData();
             }
-            del(false)
+            setLoading(false)
         } catch (error) {
             console.error("Error deleting project:", error);
             toast.error("Failed to delete project");

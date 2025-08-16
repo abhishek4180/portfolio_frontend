@@ -17,6 +17,9 @@ export const getProfile = async(loading) => {
         console.log("result", result)
         return result;
     } catch (error) {
+        if(error?.response) {
+            console.log("Error in profile", error?.response)
+        }
         console.log("GET PROFILE DETAILS API ERROR............", error)
         
     }

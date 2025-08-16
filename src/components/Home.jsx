@@ -17,7 +17,7 @@ export default function Home({dark, setIsDark}) {
         <Navbar dark ={ dark} />
         <Profile dark ={ dark}  />
         <About dark ={ dark}  />
-        <Coding dark ={ dark}  />
+        {/* <Coding dark ={ dark}  /> */}
         <Projects dark ={ dark}  />
         <Contact dark ={ dark}  />
         <Footer/>

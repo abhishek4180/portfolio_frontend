@@ -31,7 +31,7 @@ export default function Projects({dark}) {
         
         <div className=' flex w-[100%] mx-auto md:ml-0 ml-[7%] justify-center items-center' >
             <div className=' grid  md:grid-cols-3 grid-cols-1 gap-8 mt-[20px] md:mt-[80px] ' >
-                {/* {
+                {
                     loading ? ( projects.map((data,index) => (
                             <ProjectCard dark = {dark} key= {index} data={data}  />
                         )) ): (
@@ -39,13 +39,13 @@ export default function Projects({dark}) {
                             <ProjectCard dark = {dark} key= {index} data={data}  />
                         ) )
                     )
-                } */}
+                }
 
-                {
+                {/* {
                     projects.map((data,index) => (
                             <ProjectCard dark = {dark} key= {index} data={data}  />
                         ))
-                }
+                } */}
                 
             </div>
         </div>

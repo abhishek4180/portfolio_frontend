@@ -3,7 +3,8 @@ import { getProfile } from '../services/operations/Profile';
 import { FaLinkedin, FaTwitter, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { BASE_URL } from '../services/apis';
 import { axiosInstance } from '../services/apiConnector';
-import aboutImage from "../assests/about2.jpg";
+import aboutImage from "../assests/portfolio (2).png";
+import { socialMedia } from '../data/projects';
 
 export default function About() {
     const [data, setData] = useState([]);
@@ -53,7 +54,7 @@ export default function About() {
                 <div className='md:text-[20px] text-[18px] md:w-[50%] w-full flex flex-col justify-center md:items-start text-center md:text-start gap-5'>
                     <p data-aos="fade-up" className='relative flex flex-row gap-2 items-start justify-center text-start'>
                         <span className='absolute -left-10 top-3 border-b-4 border-black block w-[30px]'></span>
-                        {loading ? "Hi, I'm an undergraduate Computer Science Engineering student at YMCA. Skilled in full-stack web development, I'm seeking internships and full-time roles as a software engineer. With a strong dedication to learning and a passion for technology, I'm excited to embark on my career journey." : data.about}
+                        {loading ? "" : data.about}
                     </p>
                     <p data-aos="fade-down" className='flex flex-row gap-3'>
                         <span className='text-[22px] font-bold'>Skill:</span>
@@ -64,7 +65,7 @@ export default function About() {
                             <button className='md:text-[20px] text-[17px] button-shadow rounded-full px-[15px] py-[5px] md:px-[20px] md:py-[13px] bg-[#385170]'>Let's talk</button>
                         </a>
                         <div className='w-[50px] flex justify-center items-center h-[50px] -translate-x-[30px] border-black border-2 hover:border-[#385170] hover:text-[#385170]'>
-                            <a href='https://www.linkedin.com/in/rkvrahul/'><FaLinkedin style={{ width: "30px", height: "30px" }} /></a>
+                            <a href={socialMedia.linkedIn}><FaLinkedin style={{ width: "30px", height: "30px" }} /></a>
                         </div>
                     </div>
                 </div>
