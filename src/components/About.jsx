@@ -56,7 +56,7 @@ export default function About() {
                         <span className='absolute -left-10 top-3 border-b-4 border-black block w-[30px]'></span>
                         {loading ? "" : data.about}
                     </p>
-                    <p data-aos="fade-down" className='flex flex-row gap-3'>
+                    <p data-aos="fade-down" className='flex flex-row gap-3 flex-wrap '>
                         <span className='text-[22px] font-bold'>Skill:</span>
                         {aboutLoading ? "Java, HTML, CSS, Tailwind CSS, JavaScript, MongoDB, Express.js, React.js, Node.js, GitHub, Git" : skills.map((result, index) => (<p className='flex flex-row' key={index}>{result.name},</p>))}
                     </p>
